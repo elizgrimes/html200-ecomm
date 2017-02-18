@@ -55,3 +55,9 @@ for (var key in products) {
   console.log(products[key].description);
   console.log(products[key].price);
 }
+
+// Print filter contents on submit
+function print(){
+  console.log(document.filterForm.filter.value);
+  event.preventDefault();
+}

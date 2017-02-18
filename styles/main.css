@@ -1,0 +1,58 @@
+header {
+  background-color: #B26739;
+}
+
+.title {
+  font-family: 'Caveat Brush', cursive;
+  margin: 0;
+  padding: 1.5rem;
+}
+
+.nav-filter {
+  background-color: #79d279;
+  color: darkslategray;
+}
+
+nav {
+  padding: 1rem;
+}
+
+nav a {
+  color: darkslategray;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: darkgray;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  margin-bottom: 0;
+}
+
+select {
+  color: darkslategray;
+}
+
+aside {
+  padding-top: .7rem;
+}
+
+section {
+  padding: 1.5rem;
+}
+
+.item-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+}
+
+.item {
+  padding: 2rem;
+}

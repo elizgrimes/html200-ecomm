@@ -6,42 +6,60 @@
   <meta charset="utf-8">
 
   <link rel="stylesheet" href="styles/reset.css">
-  <link rel="stylesheet" href="styles/main.css">
+  <!--  <link rel="stylesheet" href="styles/normalize.css">-->
+  <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+  
+  <!-- Bootstrap -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-  <!-- replace with your personal Font Awesome CDN link -->
-  <script src="https://use.fontawesome.com/???.js"></script>
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="styles/main.css">
+  
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script src="https://use.fontawesome.com/793567147e.js"></script>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">Hats</a></li>
-        <li><a href="#">Gloves</a></li>
-        <li><a href="#">Scarves</a></li>
-        <li class="cart-info">
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-        </li>
-      </ul>
-    </nav>
 
-    <h1>Winter Wear Warehouse</h1>
+  <header>
+    <h1 class="title">Winter Wear Warehouse</h1>
   </header>
 
-  <aside>
-    <form>
-      <label>Filter By:
-        <select name="filter">
-          <option value="">Choose One</option>
-          <option value="price">Price</option>
-          <option value="name">Name</option>
-        </select>
-      </label>
-
-      <input type="submit" value="Sort">
-    </form>
-  </aside>
-
+  <div class="row nav-filter">
+    <div class="col-md-5">
+      <nav>
+        <ul>
+          <li><a href="#">Hats</a></li>
+          <li><a href="#">Gloves</a></li>
+          <li><a href="#">Scarves</a></li>
+          <li class="cart-info">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  
+    <div class="col-md-7">
+      <aside>
+        <form name="filterForm" onsubmit="print();">
+          <label>Filter By:
+            <select name="filter">
+              <option value="">Choose One</option>
+              <option value="price">Price</option>
+              <option value="name">Name</option>
+              </select>
+          </label>
+          <input type="submit" value="Sort">
+        </form>
+      </aside>
+    </div>
+  </div>
+  
   <section>
     <h2>Scarves</h2>
 
@@ -49,13 +67,41 @@
       <div class="item">
         <!-- code template for a single item will go here -->
         <h4>Reversible Plaid</h4>
-        <img src="images/reversible-plaid.jpg" alt="Reversible plaid scarf">
+        <img src="images/reversible-plaid.jpg" alt="Reversible plaid scarf" width="200">
         <p>Price: $26.99</p>
-        <p>Two classic patterns in one great look: This supersoft and cozy reversible scarf instantly doubles your street-style cred. 100% acrylic.</p>
+        <p>Two classic patterns in one great look</p>
+      </div>
+      <div class="item">
+        <!-- code template for a single item will go here -->
+        <h4>Reversible Plaid</h4>
+        <img src="images/reversible-plaid.jpg" alt="Reversible plaid scarf" width="200">
+        <p>Price: $26.99</p>
+        <p>Two classic patterns in one great look</p>
+      </div>
+      <div class="item">
+        <!-- code template for a single item will go here -->
+        <h4>Reversible Plaid</h4>
+        <img src="images/reversible-plaid.jpg" alt="Reversible plaid scarf" width="200">
+        <p>Price: $26.99</p>
+        <p>Two classic patterns in one great look</p>
+      </div>
+      <div class="item">
+        <!-- code template for a single item will go here -->
+        <h4>Reversible Plaid</h4>
+        <img src="images/reversible-plaid.jpg" alt="Reversible plaid scarf" width="200">
+        <p>Price: $26.99</p>
+        <p>Two classic patterns in one great look</p>
+      </div>
+      <div class="item">
+        <!-- code template for a single item will go here -->
+        <h4>Reversible Plaid</h4>
+        <img src="images/reversible-plaid.jpg" alt="Reversible plaid scarf" width="200">
+        <p>Price: $26.99</p>
+        <p>Two classic patterns in one great look</p>
       </div>
     </div>
   </section>
-
+  
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
