@@ -61,3 +61,16 @@ function print(){
   console.log(document.filterForm.filter.value);
   event.preventDefault();
 }
+
+// sum all prices
+// TODO: trigger on change of cart contents (add or remove item)
+function sumPrices(cartArray){
+  var sum = 0;
+  for(var i=0; i<cartArray.length; i++){
+    if(cartArray[i].price) {
+      sum += cartArray[i].price
+    }
+  }
+  // TODO: print total as HTML to page, next to cart icon
+  console.log("sum is " + sum);
+}

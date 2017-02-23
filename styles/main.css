@@ -56,3 +56,7 @@ section {
 .item {
   padding: 2rem;
 }
+
+.description {
+  width: 20rem;
+}
