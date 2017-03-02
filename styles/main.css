@@ -2,6 +2,12 @@ header {
   background-color: #B26739;
 }
 
+@media (max-width: 1000px) {
+  .filter {
+    margin-left: 2rem;
+  }
+}
+
 .title {
   font-family: 'Caveat Brush', cursive;
   margin: 0;
@@ -33,6 +39,24 @@ nav ul {
   flex-direction: row;
   align-content: space-between;
   margin-bottom: 0;
+}
+
+@media (max-width: 400px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 400px) {
+  nav li {
+    padding: 1rem 0 1rem 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .cart-info {
+    padding-left: 1rem;
+  }
 }
 
 select {
