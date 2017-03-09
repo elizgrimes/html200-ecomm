@@ -49,6 +49,9 @@ var products = [
   }
 ]
 
+var cart = []
+
+
 // Print out name, description, and price of each product to the console
 for (var key in products) {
   console.log(products[key].name);
@@ -73,4 +76,38 @@ function sumPrices(cartArray){
   }
   // TODO: print total as HTML to page, next to cart icon
   console.log("sum is " + sum);
+}
+
+function addRemoveCart(item){
+  var index = cart.indexOf(item);
+  if(index < 0){
+    cart.push(item);
+  } else {
+    cart.splice(index, 1);
+  }
+  console.log(cart.length);
+  event.preventDefault();
+}
+
+function comparePrice(a, b){
+  return a.price - b.price;
+}
+
+function compareName(a, b){
+  if(a.name.toLowerCase() < b.name.toLowerCase())
+    return - 1;
+  if(a.name.toLowerCase() > b.name.toLowerCase())
+    return 1;
+  return 0;
+}
+
+function filterProducts(){
+  var sortby = document.filterForm.filter.value; 
+  if(sortby == "price"){
+    products.sort(comparePrice);
+  } else if(sortby == "name"){
+    products.sort(compareName);
+  }
+  console.log(products);
+  event.preventDefault();
 }
