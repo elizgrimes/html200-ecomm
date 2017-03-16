@@ -86,6 +86,9 @@ function addRemoveCart(item){
     cart.splice(index, 1);
   }
   console.log(cart.length);
+  
+  // Increment items count for cart
+  document.getElementById("cartTotal").innerHTML = "<span>(" + cart.length + ")</span>";
   event.preventDefault();
 }
 
@@ -110,4 +113,9 @@ function filterProducts(){
   }
   console.log(products);
   event.preventDefault();
+}
+
+// Start off with 0 items in cart
+window.onload = function(){
+  document.getElementById("cartTotal").innerHTML = "<span>(0)</span>"
 }
